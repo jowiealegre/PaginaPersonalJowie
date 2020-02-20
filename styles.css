@@ -9,7 +9,7 @@ body{
     font-size:  60px;
     margin: 0;
     width: auto;
-    color: rgb(187, 180, 185);
+    color:rgb(209, 209, 209);
     display: flex;
     flex-direction:column;
     position: relative ;
@@ -227,11 +227,30 @@ body{
      height: 200px;
      }
  }
- #acercademi {
+ .acercademi {
      width: 500px;
      margin: 20px auto;
-     text-align: justify;
+     text-align: center;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: flex-start;
+     align-items: stretch;
+     align-content: stretch;
+   
  }
+ .acercademi img{
+    display:flex;
+    cursor:pointer;
+    position: absolute;
+    padding:0px; 
+	margin-bottom: auto;
+    left:100px;
+    margin-top: 200px;
+}
+
+ 
+
  .text {
      margin-bottom: 1em;
      font-family: 'Satisfy', cursive;
@@ -255,10 +274,51 @@ body{
     bottom:20px;
     right:20px;
 }
+.moon {
+    display:block;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items:baseline;
+    align-content: stretch;
+    margin-left: 80%;
+    position: absolute;
+    top: 70px;
+}
+.cont-skills{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+    margin-top: 5%;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+.skills{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+    margin:20px;
+    width: auto;
+    object-fit: cover;
+}
+.skills img {
+    width: auto;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 
 #slide_nav {
-background-color:black;
 width:50%;
 height:50px;
 line-height:50px;
@@ -268,21 +328,25 @@ font-size:35px;
 left:10px;
 box-sizing:border-box;
 }
+
 #slide_nav_button {
 display: inline;
 width:90px;
 cursor:pointer;
+
 }
+
 ul {
 display:none;
 padding:0px;
 margin:0px;
 width:200px;
-height:90%;
+height:50%;
 background-color:#2E2E2E;
 position: relative;
 cursor: pointer;
 box-shadow:inset 0px 0px 100px 0px rgb(8, 139, 139);
+
 }
 #slide_menu li {
 border-bottom:1px solid rgb(8, 139, 139);
@@ -305,7 +369,7 @@ color:silver;
 text-decoration:none;
 font-size: 18px;
 font-family: 'Satisfy', cursive;
-padding-left:10px;
+padding-left:13px;
 }
 #slide_menu li:hover a {
 padding-left:25px;
@@ -328,10 +392,78 @@ font-family: 'Satisfy', cursive;
     border-radius: 10%;
     box-shadow:inset 0px 0px 50px rgb(8, 139, 139);
     width: 960px;
-    height:640px;
+    height:850px;
     list-style: none;
     margin: auto;
 }
+
+* {
+    font-family: 'alata';
+  }
+
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .fila {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .juego {
+    padding: 20px;
+    border-radius: 8px;
+    
+  }
+  
+  .carta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #2e3d49;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 15px;
+    transition: all 0.2s ease-in;
+  }
+  
+  .carta:hover{
+    transform: scale(1.2);
+  }
+  
+  .icono {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .carta.visible {
+    pointer-events: none;
+    background-color: beige;
+  }
+  
+  .carta .numero {
+    font-size: 80px;
+    color: azure;
+  }
+  
+  .carta .icono {
+    display: none;
+  }
+  
+  .carta.visible .icono {
+    display: inline;
+  }
+  
+  .carta.visible .numero {
+    display: none;
+  }
 
 .line { 
 color: rgb(8, 139, 139);
@@ -400,5 +532,27 @@ img:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
+}
+.download{
+font-family: 'Satisfy', cursive;
+font-size:40px;
+margin-bottom: 5%;
+width: auto;
+color: rgb(8, 139, 139);
+display: flex;
+flex-direction:column;
+position: relative; ;
+align-items: center;
+}
+.cv-imagen{
+    width:12%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    align-items: center;
+    position: relative;
 
 }
