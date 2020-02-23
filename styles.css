@@ -2,6 +2,7 @@ body{
     background-color:black;
     background-image: url('http://evasantos.com/ilustraciones/astronauta/img/estrellas01_1.svg');
     
+    
  }
 
  .name{
@@ -15,12 +16,13 @@ body{
     position: relative ;
     align-items: center;
  }
+
  .name1 {
     font-family: 'Satisfy', cursive;
     font-size:40px;
     margin: 0;
     width: auto;
-    color: rgb(8, 139, 139);
+    color:rgb(8, 139, 139);
     display: flex;
     flex-direction:column;
     position: relative; ;
@@ -173,7 +175,7 @@ body{
      #contenedor {
             height: 200px; 
              width: 200px;
-             border: 3px black solid;
+             border: 3px rgb(8, 139, 139);
  
      }
      #astronauta {
@@ -284,6 +286,7 @@ body{
     margin-left: 80%;
     position: absolute;
     top: 70px;
+    cursor: pointer;
 }
 .cont-skills{
     display: flex;
@@ -292,6 +295,7 @@ body{
 	justify-content: center;
 	align-items: center;
     align-content: stretch;
+    width: auto;
     margin-top: 5%;
     margin-bottom: 1em;
     overflow: hidden;
@@ -322,7 +326,7 @@ body{
 width:50%;
 height:50px;
 line-height:50px;
-color:rgb(8, 139, 139);;
+color: rgb(8, 139, 139);
 font-family: 'Satisfy', cursive;
 font-size:35px; 
 left:10px;
@@ -392,7 +396,7 @@ font-family: 'Satisfy', cursive;
     border-radius: 10%;
     box-shadow:inset 0px 0px 50px rgb(8, 139, 139);
     width: 960px;
-    height:850px;
+    height:800px;
     list-style: none;
     margin: auto;
 }
@@ -419,59 +423,48 @@ font-family: 'Satisfy', cursive;
     
   }
   
-  .carta {
+  .memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    width: 100px;
-    height: 100px;
-    background-color: #2e3d49;
-    border-radius: 8px;
-    cursor: pointer;
-    padding: 15px;
-    transition: all 0.2s ease-in;
-  }
-  
-  .carta:hover{
-    transform: scale(1.2);
-  }
-  
-  .icono {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-  .carta.visible {
-    pointer-events: none;
-    background-color: beige;
-  }
-  
-  .carta .numero {
-    font-size: 80px;
-    color: azure;
-  }
-  
-  .carta .icono {
-    display: none;
-  }
-  
-  .carta.visible .icono {
-    display: inline;
-  }
-  
-  .carta.visible .numero {
-    display: none;
+    flex-wrap: wrap;
   }
 
-.line { 
-color: rgb(8, 139, 139);
-height: 0px;
-border:5px dashed;
+  .memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    border-radius: 10%;
+    
+  }
+  
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
 
-}
+  }
 
+  .memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+  
+   transform: scale(1);
+  }
+  
+   .memory-card:active {
+     transform: scale(0.97);
+     transition: transform .2s;
+   }
+  
 .imagen{
     width: 90%;
     margin: auto;
