@@ -6,9 +6,9 @@ body{
  }
 
  .name{
-    font-family: 'Satisfy', cursive;
-    font-size:  60px;
-    margin: 0;
+    font-family: 'Press Start 2P';
+    font-size:  40px;
+    margin: 20px;
     width: auto;
     color:rgb(209, 209, 209);
     display: flex;
@@ -18,8 +18,8 @@ body{
  }
 
  .name1 {
-    font-family: 'Satisfy', cursive;
-    font-size:40px;
+    font-family: 'Press Start 2P';
+    font-size:20px;
     margin: 0;
     width: auto;
     color:rgb(8, 139, 139);
@@ -184,6 +184,7 @@ body{
          width: 129px;
          margin-left: 25px;
          margin-top: 25px;
+         margin-bottom: 50px;
     
       -webkit-animation: mover_astronauta2 60s ease-in-out infinite;
      
@@ -229,9 +230,13 @@ body{
      height: 200px;
      }
  }
+ #acercademi {
+     margin-top: 15%;
+ }
  .acercademi {
      width: 500px;
-     margin: 20px auto;
+     margin: auto;
+     margin-bottom:50px;
      text-align: center;
      display: flex;
      flex-direction: row;
@@ -254,9 +259,10 @@ body{
  
 
  .text {
-     margin-bottom: 1em;
-     font-family: 'Satisfy', cursive;
-     font-size: 35px;
+     margin-bottom: 10px; 
+     font-family: 'Press Start 2P';
+     font-size: 25px;
+     margin: 20px;
      color: rgb(8, 139, 139);
  }
 
@@ -296,9 +302,14 @@ body{
 	align-items: center;
     align-content: stretch;
     width: auto;
+    margin: auto;
     margin-top: 5%;
-    margin-bottom: 1em;
+    margin-bottom: 5%;
     overflow: hidden;
+
+    #skills {
+        margin-bottom: 5%;
+    }
 }
 .skills{
     display: flex;
@@ -327,8 +338,8 @@ width:50%;
 height:50px;
 line-height:50px;
 color: rgb(8, 139, 139);
-font-family: 'Satisfy', cursive;
-font-size:35px; 
+font-family: 'Press Start 2P';
+font-size:30px; 
 left:10px;
 box-sizing:border-box;
 }
@@ -371,8 +382,9 @@ line-height:50px;
 display:block;
 color:silver;
 text-decoration:none;
-font-size: 18px;
-font-family: 'Satisfy', cursive;
+font-size: 15px;
+font-family: 'Press Start 2P';
+
 padding-left:13px;
 }
 #slide_menu li:hover a {
@@ -385,7 +397,7 @@ transition: all 200ms linear;
 #page_content {
 margin-top:40px;
 text-align:center;
-font-family: 'Satisfy', cursive;
+font-family: 'Press Start 2P';
 }
 
    @media (max-width: 768px){
@@ -396,7 +408,8 @@ font-family: 'Satisfy', cursive;
     border-radius: 10%;
     box-shadow:inset 0px 0px 50px rgb(8, 139, 139);
     width: 960px;
-    height:800px;
+    height:750px;
+    top: 500px;
     list-style: none;
     margin: auto;
 }
@@ -496,7 +509,7 @@ img:hover{
     background-color:transparent;
     width: 100%;
     height: 100%;
-    bottom: 0;
+    bottom: 30%;
     position: relative;
     text-align: center;
     color: rgb(8, 139, 139);
@@ -509,6 +522,7 @@ img:hover{
     height:640px;
     list-style: none;
     margin: auto;
+    margin-top: 5%;
     left: 50%;
 }
 #contact h1 {
@@ -528,9 +542,10 @@ img:hover{
 
 }
 .download{
-font-family: 'Satisfy', cursive;
-font-size:40px;
+font-family: 'Press Start 2P';
+font-size:15px;
 margin-bottom: 5%;
+margin-top: 5%;
 width: auto;
 color: rgb(8, 139, 139);
 display: flex;
@@ -548,4 +563,14 @@ align-items: center;
     align-items: center;
     position: relative;
 
+}
+
+.logo{
+    background-color:transparent;
+    width: 50%;
+    height: 50%;
+    
+    position: absolutes;
+    text-align: center;
+    color: rgb(8, 139, 139);
 }
